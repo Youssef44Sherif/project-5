@@ -1,0 +1,159 @@
+/*
+*{
+    transition: all 0.3 ease-in-out 0.2;
+}
+*/
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 21px;
+    line-height: 1.38105;
+    font-weight: 400;
+    letter-spacing: .011em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+
+}
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #c40000;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+a{
+    text-decoration: none;
+    color: #fff
+}
+.departments{
+    background-color: #0a0a0a;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    height: 40px
+}
+.departments ul a{
+    color: #fff;
+    width: 10%;
+    float: left;
+    font-size: 14px;
+}
+.departments img{
+    margin-top: -14px
+}
+.departments ul li{
+    display: block;
+margin-top: -9px
+}
+/* end nav */
+/* start iphone nav */
+.iphone{
+    background-color: #141414;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    height: 92px;
+    margin-top: -7px;
+    float: left;
+    width: 100%
+
+}
+.iphone ul{
+        padding: 0px 151px;
+}
+.iphone ul li{
+    text-align: center;
+    display: block;
+    float: left;
+    width: 12.5%;
+    position: relative
+
+}
+.iphone a{
+    text-align: center
+}
+.iphone ul a p{
+    font-size: 11px;
+    line-height: 1.09091;
+    font-weight: 400;
+    letter-spacing: -.008em;
+    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    margin-top: 0;
+    /*
+    display: block;
+    margin: 0;
+*/
+}
+.iphone ul h6{
+    margin-top: -9px;
+    color: #ef5602
+}
+.iphone li:hover p{
+    color: #6bf
+}
+/* end proudcts */
+.main{
+    clear: both
+}
+/* start iphone xs */
+.iphone-Xs{
+    text-align: center;
+    padding-top: 80px;
+    background-color: #000;
+    color: #fff;
+    padding-bottom: 80px;
+}
+.bro{
+    margin: 0 auto;
+}
+.iphone-Xs h2{
+    width: 126px;
+    height: 20px;
+    background-size: 126px 20px;
+    background-repeat: no-repeat;
+    background-image: url("../image/iphone%20XS.png");
+    margin: 20px auto;
+}
+.iphone-Xs h3{
+    font-size: 48px;
+    line-height: 1.08365;
+    font-weight: 600;
+    letter-spacing: -.003em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+width: 352px;
+    height: 104px
+}
+.iphone-Xs .availability {
+    list-style-type: none;
+    margin: 22px auto;
+    color: #ccc;
+    display: block;
+    padding: 0
+}
+.iphone-Xs .availability .item{
+    font-size: 21px;
+    line-height: 1.38105;
+    font-weight: 400;
+    letter-spacing: .011em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+.more{
+    list-style-type: none;
+    display: inline-block;
+}
+.more li {
+    display: inline-block;
+    margin-right: 30px;
+    color: #6bf
+}
+.more li a {
+    color: #6bf
+}
+.img-iphone-xs{
+    top: 50px;
+    width: 709px;
+    height: 205px;
+    background-size: 709px 205px;
+    background-repeat: no-repeat;
+    background-image: url("../image/hero-iphone-xs_medium.jpg");
+    left: 50%;
+    margin-left: 21%;
+}
