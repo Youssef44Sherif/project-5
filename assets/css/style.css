@@ -1,5 +1,6 @@
 
 *{
+    transition: all 0.3s ease-in-out 0
 }
 
 body{
@@ -10,7 +11,7 @@ body{
     font-weight: 400;
     letter-spacing: .011em;
     font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
-
+    background-color: #000
 }
 ul{
     padding: 0 0
@@ -57,7 +58,7 @@ a{
 }
 .departments ul li{
     display: block;
-margin-top: -9px
+    margin-top: 11px
 }
 /* end nav */
 /* start iphone nav */
@@ -145,7 +146,11 @@ margin-top: -9px
 /*start xr section */
 .iphone-xr{/*with xs*/
     border-top: 12px solId #111;
-    padding-bottom: .5px
+}
+.iphone-xr::after{
+    content: "";
+    display: block;
+    clear: both
 }
 /* end assets sections */
 /* start genuration */
@@ -155,14 +160,26 @@ margin-top: -9px
     background-image: url("../image/film_medium.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 1068px 390px;
+    background-size: 1168px 390px;
     text-align: center;
     margin: -21px 0;
-    overflow: hidden
+    overflow: hidden;
+/*    border: 21px solid #000;*/
+    margin-top: 0;
+    position: relative
+
 }
 .genuration-1{
-    padding-top: 15.5%;
-    height: 60%
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    padding: 14%;
+    position: absolute;
+}
+.genuration-1::after{
+    content: "";
+    clear: both;
+    display: block
 }
 .genuration-1 p{
     color: #fff;
@@ -173,9 +190,140 @@ margin-top: -9px
 }
 .genuration-1 h4{
     color: #fff;
-    margin: -3%
+    margin-top: 0
 }
 .genuration-1:hover{
     background: rgba(0,0,0,0.35);
     cursor: pointer
+}
+/*end genuration section*/
+/*start compare section */
+.compare{
+    height: auto;
+    background-color: #efefef;
+    padding-top: 50px;
+    position: relative
+}
+.comparer{
+    width:  69% !important;
+    padding: 34px 10px;
+    margin-top: 50px
+}
+/*.compare*/ .container{
+    background-color: #fff
+}
+.compare-img{
+    left: 10px;
+/*    position: absolute;;*/
+    height: 100%
+}
+.compare-img img {
+    padding-left: 30px;
+    height: 316px   
+}
+.compare-models{
+/*    position: absolute*/
+    color: #111; */
+    margin: 0;
+    padding: 0
+}
+.compare-models p{
+    height: 100px;
+    width: 235.25px;
+    font-size: 32px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 83px;
+}
+.compare-models a{
+    font-size: 17px;
+    font-weight: 600;
+    margin-left: -22px;
+}
+.compare .models{
+    float: right
+}
+.compare .img{
+    float: left
+}
+/* end compare one*/                                                                  
+/* start last two compars */
+.trade{
+    width:  100% !important;
+    margin-top: 50px;
+    
+}
+.trade-sec{
+    width: 386px;
+    height: 700px
+}
+.trade-row{
+    background-color:  #efefef 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 500px){
+    .departments ul li{
+        display: none
+    }
+    .vis{display: inline-block !important;
+    width: 24.333333%;
+    float: left;
+    margin-left: 32px;
+    text-align: center;
+    }
+    .iphone{
+        overflow: hidden;
+        height: auto;
+        width: 100%;
+        padding: 8px 0
+    }
+    .iphone ul li {
+        width: 100px;
+        margin-left: 0px;
+        overflow: hidden;
+        height: auto;
+        margin-left: 0;
+        display: inline-block;
+        clear: both;
+        float: none;
+        margin-right: -17px;
+        margin-bottom: -5px
+    }
+    .iphone ul{
+        padding: 0;
+        margin-left: 0
+    }
+    .compare-img img{
+        padding: 0;
+        margin-top: 50px
+}
+    .comparer{
+        height: 435px;
+        overflow: hidden
+
+    }
+    .compare-models a{
+        margin-left: 0;
+        
+    }
 }
